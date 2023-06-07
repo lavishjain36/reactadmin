@@ -1,0 +1,63 @@
+.top-bar{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100vw;
+}
+.left-bar{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    text-align: center;
+    width: 20vw;
+    height: 100vh;
+    background-color: cornflowerblue;
+    position: fixed;
+}
+.content{
+    padding-top: 4rem;
+    padding-left: 20vw;
+    width: 80vw;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+a:hover::first-line{
+   background-color: rgb(80, 200, 255);
+}
+.das-icon{
+    text-align: center;
+    font-size: xxx-large;
+}
+.login-page{
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 15vw;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.card-container{
+    padding-left: 50px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
+  }
+  .stud-card{
+    padding-top: 20px;
+    text-align: center;
+  }
+  .control{
+    padding-left: 20px;
+    padding-bottom:2px;
+  }
+  .error{
+    text-align: center;
+    padding-top: 25%;
+  }
+ 
+
