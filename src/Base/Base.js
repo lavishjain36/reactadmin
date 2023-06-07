@@ -1,12 +1,13 @@
 import React from "react";
 import { Topbar } from "../Component/Topbar";
-import { useHistory,useParams } from "react-router-dom";
+import  {useHistory,Link}  from "react-router-dom";
 import Divider from '@mui/material/Divider';
+// import { Link } from "react-router-dom/cjs/react-router-dom";
 
 
 function Base({children}){
     const history=useHistory("");
-    const{id}=useParams();
+    // const{id}=useParams();
      return(
         <div className="base-design">
         <div className="top-bar">
@@ -14,11 +15,11 @@ function Base({children}){
         </div>
         <div className="left-bar">
         <div className="nav-bar">
-        <a href="" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/")}>Dashboard</a>
+        <Link to="/" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/")}>Dashboard</Link>
         <Divider variant="middle" />
-        <a href="" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/addbook")}>Adding Book</a>
+        <Link to="/" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/addbook")}>Adding Book</Link>
         <Divider variant="middle" />
-       <a href="" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/books")}>Books </a>
+       <Link to="/" style={{fontSize:"20px",color:"white"}} onClick={()=>history.push("/books")}>Books </Link>
       
        </div>
         </div>
